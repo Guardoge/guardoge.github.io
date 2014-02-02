@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!--sets the bar style of the web app to resemble a real app-->
+    <meta property="og:title" content="Miley Cyrus' Tongue"/>
+    <meta property="og:site_name" content="Miley Cyrus' Tongue"/>
+	<title>Miley Cyrus' Tongue</title>
+	<link href="http://mileycyrustongue.com/css/cyrus.css" rel="stylesheet" type="text/css">
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script>
+		setInterval(checkScroll,10);
+		function checkScroll(){
+			 if($(window).scrollTop() + $(window).height() > $(document).height()/2) {
+			   addTongue();
+		   }
+		}
+		//$(window).scroll(function() {
+		  // if($(window).scrollTop() + $(window).height() > $(document).height()-250) {
+			//   addTongue();
+		   //}
+		//});
+		function fillin(){
+			window.navigator.standalone = true;
+			window.scrollTo(0, 1);
+			// 
+			var cHeight = $('.main_content').height();
+			var wHeight = $(window).height()+500000;
+			var tHeight = 224;
+			while(cHeight<wHeight){
+				addTongue();
+				cHeight+=tHeight;
+			}
+		}
+		function addTongue(){
+			var tPath="http://mileycyrustongue.com/http://mileycyrustongue.com/images/tongue_repeat.jpg";
+			if(Math.random()>.9){
+				tPath="http://mileycyrustongue.com/http://mileycyrustongue.com/http://mileycyrustongue.com/images/tongue_repeat2.jpg";
+			}
+			$('.main_content').append('<div class="tongue"><img src="'+ tPath +'" /></div>');
+		}
+   
+</script>
+</head>
+<body onload="fillin();">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=220274108033922";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+	<div class="container">
+        <div class="topper">
+            <h1>MILEY CYRUS' INFINITE TONGUE</h1>
+    
+        </div>
+        <div class="main_content">
+            <div class="cyrus">
+                <img src="http://mileycyrustongue.com/images/cyrus.jpg" />
+            </div>
+        </div>
+    </div>
+</body>
+</html>
