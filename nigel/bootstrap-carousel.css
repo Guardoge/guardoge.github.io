@@ -83,7 +83,7 @@ margin-top: 80px;
   position: absolute;
   top: 0;
   left: 0;
-  min-width: 100%;
+  width: 50%;
   height: 500px;
 }
 
