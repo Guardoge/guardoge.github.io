@@ -7,6 +7,59 @@ body {
   color: #5a5a5a;
 }
 
+** PICTURE THIS - WEBSITE BY JAKE CAMP, COPYRIGHTED **
+body {
+  padding-top: 50px;
+}
+.root-container {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.navbar-inverse {
+	background-color: #CC3399;
+	border-color: #CC33999;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
+	background-color: #CC3399;
+}
+.navbar-inverse .navbar-nav>li>a {
+	color:#F2F2F2
+}
+
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+	background-color: #0CAE68;
+}
+
+.navbar-inverse .navbar-toggle {
+	border-color: #0CAE68;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+	border-color: #0CAE68;
+}
+
+.logo{
+	margin-top: -15px;
+}
+
+.logo-text{
+	color:#FFFFFF!important;
+}
+
+.login{
+	margin-top: 80px;
+}
+
+.recent-tip h1 {
+	margin-bottom: 20px;
+}
+
+.recent-tip {
+margin-top: 80px;
+}
+
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
